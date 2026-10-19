@@ -1,0 +1,18 @@
+name: Réveil Supabase
+
+on:
+  schedule:
+    - cron: "0 6 */3 * *"   # tous les 3 jours, à 6 h (heure UTC)
+  workflow_dispatch:         # permet aussi de le lancer à la main
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Interroger le classement
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://dbenrtqxckxjitelyaha.supabase.co/rest/v1/scores?select=id&limit=1" \
+            -H "apikey: sb_publishable_JWB_Q5moF_zI7eNE_BJHjw_V19SbUGj")
+          echo "Réponse de Supabase : $code"
+          test "$code" = "200"
