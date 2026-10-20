@@ -259,7 +259,7 @@ td .slot{min-width:96px;width:100%}
 @media(min-width:700px){.opts{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .opt{text-align:left;padding:10px 12px;border:1px solid var(--rule);border-radius:12px;background:var(--bg2);font-weight:600;min-height:46px;display:flex;gap:8px;align-items:center;overflow-wrap:anywhere;min-width:0}
 .opt kbd{font-family:var(--f-mono);font-size:11px;color:var(--muted);border:1px solid var(--rule);border-radius:4px;padding:0 4px;flex:none}
-.opt:hover{border-color:var(--sel);background:var(--sel-soft)}
+@media(hover:hover){.opts:not(.fresh) .opt:hover{border-color:var(--sel);background:var(--sel-soft)}}
 .sugs{display:flex;flex-wrap:wrap;gap:6px;min-height:32px;max-height:min(20vh,140px);overflow-y:auto}
 .sug{padding:6px 10px;border:1px solid var(--rule);border-radius:999px;background:var(--bg2);font-weight:600;font-size:14px;text-align:left}
 .sug[aria-selected="true"]{border-color:var(--sel);background:var(--sel-soft)}
@@ -360,6 +360,28 @@ tr.why td{font-size:13px;color:var(--muted);background:transparent;border-top:0;
 .coderow code{font-family:var(--f-mono);font-size:15px;font-weight:700;letter-spacing:.06em;background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:6px 10px;user-select:all}
 .savebox input{text-transform:uppercase}
 .smsg{color:var(--ink)}
+.prow2{display:flex;gap:8px}
+.prow2 input{flex:1;min-width:0}
+.pstat{font-size:12px;font-family:var(--f-mono);font-weight:700}
+.pstat.ok{color:var(--ok)} .pstat.warn{color:var(--gold)}
+.pmsg.good{color:var(--ok)}
+.lbtabs{display:flex;gap:6px}
+.lbtabs button{flex:1;padding:7px 10px;border-radius:999px;border:1px solid var(--rule);background:transparent;color:var(--muted);font-weight:700;font-size:13px}
+.lbtabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.lb .who{display:flex;align-items:center;gap:5px;min-width:0}
+.bdg{font-size:13px;line-height:1;white-space:nowrap}
+.bdg.cup{font-family:var(--f-mono);font-size:12px;font-weight:700;color:var(--gold)}
+.champ{display:flex;gap:14px;align-items:flex-start;background:linear-gradient(135deg,var(--gold-soft),var(--surface) 70%);border:1.5px solid var(--gold);border-radius:16px;padding:14px 16px;margin:18px 0 22px;box-shadow:0 0 26px -10px var(--gold)}
+.crownbig{font-size:36px;line-height:1}
+.chbody{display:grid;gap:6px;min-width:0;flex:1}
+.champ h2{font-size:22px;font-weight:800;overflow-wrap:anywhere}
+.chxp{font-size:14px;color:var(--gold);font-weight:700}
+.champ blockquote{margin:0;font-style:italic;font-size:16px;overflow-wrap:anywhere}
+.cqrow{display:flex;gap:8px}
+.cqrow input{flex:1;min-width:0;font:inherit;padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--bg2);color:var(--ink)}
+.patch h3{font-size:16px;font-weight:800}
+.patch ul{margin:6px 0 0;padding-left:18px;display:grid;gap:6px;line-height:1.5}
+.chbody .linkbtn{justify-self:start}
 .molsvg .k0{fill:none;fill-rule:evenodd;stroke:#FF7A72;stroke-width:2.0px;}.molsvg .k1{fill:none;fill-rule:evenodd;stroke:#EDF2F9;stroke-width:2.0px;}.molsvg .k2{fill:#EDF2F9;fill-rule:evenodd;stroke:#EDF2F9;stroke-width:0.5px;;}.molsvg .k3{fill:#FF7A72;fill-rule:evenodd;stroke:#FF7A72;stroke-width:0.5px;;}.molsvg .k4{fill:none;fill-rule:evenodd;stroke:#EDF2F9;stroke-width:1.0px;}.molsvg .k5{fill:none;fill-rule:evenodd;stroke:#FF7A72;stroke-width:1.0px;}.molsvg .k6{fill:none;stroke:#EDF2F9;stroke-width:2.0px;;}.molsvg .k7{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k8{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k9{fill:none;fill-rule:evenodd;stroke:#FFB259;stroke-width:2.0px;}.molsvg .k10{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k11{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k12{font-size:19px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k13{font-size:19px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k14{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k15{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k16{font-size:22px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k17{fill:#72B7FF;fill-rule:evenodd;stroke:#72B7FF;stroke-width:0.5px;;}.molsvg .k18{fill:none;fill-rule:evenodd;stroke:#72B7FF;stroke-width:2.0px;}.molsvg .k19{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k20{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k21{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k22{font-size:9px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k23{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#EDF2F9}.molsvg .k24{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k25{fill:none;fill-rule:evenodd;stroke:#9EB7FF;stroke-width:2.0px;}.molsvg .k26{fill:none;fill-rule:evenodd;stroke:#F9D84C;stroke-width:2.0px;}.molsvg .k27{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k28{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k29{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k30{font-size:11px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k31{font-size:11px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k32{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k33{fill:#9EB7FF;fill-rule:evenodd;stroke:#9EB7FF;stroke-width:0.5px;;}.molsvg .k34{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k35{font-size:20px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k36{font-size:20px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k37{font-size:20px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k38{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k39{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k40{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k41{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k42{font-size:21px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k43{fill:none;fill-rule:evenodd;stroke:#9EB7FF;stroke-width:1.0px;}.molsvg .k44{font-size:20px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k45{font-size:13px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k46{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k47{font-size:10px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k48{fill:none;fill-rule:evenodd;stroke:#72B7FF;stroke-width:1.0px;}.molsvg .k49{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k50{font-size:9px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k51{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k52{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#EDF2F9}.molsvg .k53{font-size:19px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k54{font-size:12px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k55{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k56{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k57{font-size:22px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}
 </style>
 <script src="supabase.js"></script>
@@ -1390,8 +1412,8 @@ function buildQuiz(L){
   const enz = [...new Set(steps.map(s=>s.st.e).filter(Boolean))];
   const mols = [...new Set(steps.map(s=>s.st.m))];
   const trapsK = k => (L.traps||[]).map(norm).filter(t=>KIND[t]===k);
-  const opts = (ans, pools) => { const seen = new Set([nrm(ans)]), out = [];
-    for (const p of pools) for (const t of shuffle(p.slice())){ if (out.length>=3) break; const k = nrm(t); if (!k||seen.has(k)) continue; seen.add(k); out.push(t); }
+  const opts = (ans, pools, ctx) => { const seen = new Set([nrm(ans)]), out = [];
+    for (const p of pools) for (const t of shuffle(p.slice())){ if (out.length>=3) break; const k = nrm(t); if (!k||seen.has(k)) continue; if (ctx!=null && qtyMatch(t,{ans,ctx})) continue; seen.add(k); out.push(t); }
     return shuffle(out.concat([ans])); };
   steps.forEach((s,k) => {
     const st = s.st, why = (LESSONS[L.id].x[k]) || st.w || "";
@@ -1401,7 +1423,7 @@ function buildQuiz(L){
   });
   (L.grids||[]).forEach(g => g.rows.forEach((r,ri) => { for (let ci=1; ci<r.length; ci++){
     const col = g.rows.map(x=>norm(x[ci]));
-    qs.push({q:`${g.cols[ci]} — ${norm(r[0])} ?`, a:norm(r[ci]), o:opts(norm(r[ci]),[col,(L.traps||[]).map(norm)]), why:(g.whys||[])[ri]||""});
+    qs.push({q:`${g.cols[ci]} — ${norm(r[0])} ?`, a:norm(r[ci]), o:opts(norm(r[ci]),[col,(L.traps||[]).map(norm)],norm(r[0])), why:(g.whys||[])[ri]||""});
   }}));
   const good = qs.filter(q=>q.o.length>=3);
   // une question par étape au plus, réparties sur la voie
@@ -1414,7 +1436,7 @@ function quizHTML(){
   const q = LR.qs[LR.qi], done = LR.pick!=null;
   return `<div class="lcard"><span class="eyebrow">Mini-quiz · question ${LR.qi+1} / ${LR.qs.length} · ${LR.ok} juste${LR.ok>1?"s":""}</span>
     <h2 class="lstep">${esc(q.q)}</h2>
-    <div class="opts lq">${q.o.map((t,i)=>{ const st = !done ? "" : t===q.a ? " right" : i===LR.pick ? " wrong" : " dim";
+    <div class="opts lq${done?"":" fresh"}">${q.o.map((t,i)=>{ const st = !done ? "" : t===q.a ? " right" : i===LR.pick ? " wrong" : " dim";
       return `<button class="opt${st}" data-lq="${i}" ${done?"disabled":""}><kbd>${i+1}</kbd><span>${esc(t)}</span></button>`; }).join("")}</div>
     ${done?`<div class="fb ${q.o[LR.pick]===q.a?"good":""}"><b>${q.o[LR.pick]===q.a?"Juste":"Raté"}</b>${q.o[LR.pick]!==q.a?`<p>La bonne réponse : <strong>${esc(q.a)}</strong>.</p>`:""}${q.why?`<p>${esc(q.why)}</p>`:""}</div>
       <div class="lnav"><span></span><button class="cta" data-l="qnext" id="qnext">${LR.qi===LR.qs.length-1?"Voir le bilan":"Question suivante"}</button></div>`:""}
@@ -1473,7 +1495,7 @@ function finishLesson(){
   G.lessons[LR.L.id] = {t:Date.now(), best:Math.max(prev?prev.best:0, LR.ok), n:LR.qs.length};
   const today = dayStr();
   if (G.lastDay !== today){ const y = new Date(); y.setDate(y.getDate()-1); G.streak = (G.lastDay===dayStr(y)) ? (G.streak||0)+1 : 1; G.lastDay = today; }
-  G.xp += LR.gain; save();
+  addXP(LR.gain); save();
   LR.phase = "done";
 }
 
@@ -1656,7 +1678,7 @@ function guessFinish(){
   if (GQ.record) G.molBest[GQ.w] = GQ.gained;
   const today = dayStr();
   if (G.lastDay !== today){ const y = new Date(); y.setDate(y.getDate()-1); G.streak = (G.lastDay===dayStr(y)) ? (G.streak||0)+1 : 1; G.lastDay = today; }
-  G.xp += GQ.gained; save();
+  addXP(GQ.gained); save();
   GQ.status = "end"; GQ.won = won; GQ.perfect = perfect;
   renderGuess(true);
 }
@@ -1693,7 +1715,7 @@ function renderGuess(first){
       desk = GQ.typing
         ? `<div class="desk"><div class="in">${head}<div class="sugs" id="gsugs">${GQ.sugs.map((t,i)=>`<button class="sug" data-gs="${i}">${esc(t)}</button>`).join("")||`<span class="hint">Les suggestions viennent des noms de molécules du jeu.</span>`}</div>
            <div class="typerow"><input id="gans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Nom de la molécule" aria-label="Nom de la molécule"><button data-g="ok">OK</button></div></div></div>`
-        : `<div class="desk"><div class="in">${head}<div class="opts lq">${GQ.opts.map((t,i)=>`<button class="opt" data-go="${i}"><kbd>${i+1}</kbd><span>${esc(t)}</span></button>`).join("")}</div></div></div>`;
+        : `<div class="desk"><div class="in">${head}<div class="opts lq fresh">${GQ.opts.map((t,i)=>`<button class="opt" data-go="${i}"><kbd>${i+1}</kbd><span>${esc(t)}</span></button>`).join("")}</div></div></div>`;
     }
   }
   app.innerHTML = `<div style="--w:${W.c};--wsoft:${W.s}">
@@ -1725,6 +1747,138 @@ function guessHomeHTML(){
     <button class="cta sm" data-guess="1">Jouer</button></div>`;
 }
 
+/* ================== v1.1 : SEMAINE, PSEUDO VALIDÉ, CHAMPION, NOTES DE PATCH ================== */
+const VERSION = "1.1";
+const PATCH = [
+  {v:"1.1", d:"21/10/2026", items:[
+    "Nouveau : classement de la semaine, remis à zéro chaque lundi à 0 h (heure de Paris). Tous les XP comptent : voies, leçons et Devine la molécule.",
+    "Nouveau : le n°1 de la semaine devient champion. Il est affiché en haut de l'accueil toute la semaine suivante, avec sa citation.",
+    "Nouveau : pastilles à côté des pseudos. 👑 pour le champion en titre, 🏆 pour chaque semaine gagnée.",
+    "Nouveau : bouton « Valider » pour le pseudo. Chaque pseudo est unique : s'il est déjà pris, le jeu te le dit.",
+    "Correction : dans les bilans, « 2 » et « 2 ATP » ne sont plus proposés ensemble quand on demande des ATP, et « 2ATP » écrit sans espace est accepté.",
+    "Correction : la proposition cliquée à la question précédente ne reste plus surlignée."]},
+  {v:"1.0", d:"20/10/2026", items:[
+    "Lancement : 30 voies sur le plan de métro, mode Apprentissage (29 leçons), structures des molécules, Devine la molécule, classement et sauvegarde en ligne."]}
+];
+function weekKey(d){
+  let y, m, dd;
+  try {
+    const p = new Intl.DateTimeFormat("en-CA", {timeZone:"Europe/Paris", year:"numeric", month:"2-digit", day:"2-digit"}).format(d || new Date());
+    [y, m, dd] = p.split("-").map(Number);
+  } catch(e){ const x = d || new Date(); y = x.getFullYear(); m = x.getMonth()+1; dd = x.getDate(); }
+  const t = Date.UTC(y, m-1, dd), wd = (new Date(t).getUTCDay()+6) % 7;
+  return new Date(t - wd*864e5).toISOString().slice(0,10);
+}
+function addXP(n){ const k = weekKey(); if (!G.wk || G.wk.k!==k) G.wk = {k, xp:0}; G.wk.xp += n; G.xp += n; }
+const weekXP = () => (G.wk && G.wk.k===weekKey()) ? G.wk.xp : 0;
+const frDate = s => { const [y,m,d] = String(s).split("-"); return d+"/"+m; };
+
+/* ---------- pseudo validé et unique ---------- */
+const cleanPseudo = v => String(v||"").replace(/\s+/g," ").trim();
+const PSEUDO_RE = /^[\p{L}\p{N} _.\-']{2,20}$/u;
+async function claimPseudo(v, silent){
+  v = cleanPseudo(v);
+  if (!PSEUDO_RE.test(v)){ if (!silent){ LB.pmsg = "2 à 20 caractères : lettres, chiffres, espace, _ . - '"; LB.pok = false; renderLB(); } return false; }
+  if (!SB){ G.pseudo = v; G.pseudoOk = true; save(); LB.pmsg = "✓ Pseudo validé."; LB.pok = true; LB.pdraft = null; renderLB(); return true; }
+  if (!G.code){ LB.pmsg = "Connexion au classement en cours, réessaie dans un instant."; LB.pok = false; renderLB(); return false; }
+  LB.pbusy = true; if (!silent) renderLB();
+  try {
+    const r = await SB.rpc("claim_pseudo", {p_code:G.code, p_pseudo:v});
+    if (r.error) throw r.error;
+    if (r.data==="ok"){ G.pseudo = v; G.pseudoOk = true; LB.pdraft = null; LB.pmsg = silent ? "" : "✓ Pseudo validé : tu apparais au classement sous ce nom."; LB.pok = true; save(); }
+    else if (r.data==="pris"){ if (silent){ G.pseudoOk = false; LB.pmsg = `Le pseudo « ${v} » est déjà pris par quelqu'un d'autre : choisis-en un autre.`; } else LB.pmsg = "Ce pseudo est déjà pris. Choisis-en un autre."; LB.pok = false; }
+    else { LB.pmsg = "Pseudo refusé (2 à 20 caractères)."; LB.pok = false; }
+  } catch(e){ LB.pmsg = "Validation impossible pour le moment. Réessaie plus tard."; LB.pok = false; }
+  LB.pbusy = false; renderLB(); return G.pseudoOk;
+}
+function pseudoHTML(){
+  const val = LB.pdraft!=null ? LB.pdraft : (G.pseudo||"");
+  const status = G.pseudoOk && G.pseudo ? `<span class="pstat ok">✓ Validé : ${esc(G.pseudo)}</span>` : G.pseudo ? `<span class="pstat warn">Pas encore validé</span>` : `<span class="pstat warn">Choisis un pseudo et valide-le pour apparaître</span>`;
+  return `<label for="pseudo">Ton pseudo</label>
+    <div class="prow2"><input id="pseudo" maxlength="20" autocomplete="nickname" placeholder="ex. GAPDH_du_93" value="${esc(val)}"><button class="cta sm" data-pv="1" ${LB.pbusy?"disabled":""}>Valider</button></div>
+    ${status}${LB.pmsg?`<p class="note pmsg ${LB.pok?"good":""}">${esc(LB.pmsg)}</p>`:""}`;
+}
+
+/* ---------- pastilles ---------- */
+let CHAMPS = [], CH = null;
+const rowKeyMatch = (c, r) => (c.sid && r.sid && c.sid===r.sid) || (c.uid && c.uid===r.id);
+function badgesHTML(r){
+  let h = "";
+  if (CH && rowKeyMatch(CH, r)) h += `<span class="bdg crown" title="Champion de la semaine en titre">👑</span>`;
+  const n = CHAMPS.filter(c => rowKeyMatch(c, r)).length;
+  if (n) h += `<span class="bdg cup" title="${n} semaine${n>1?"s":""} gagnée${n>1?"s":""}">🏆${n>1?"×"+n:""}</span>`;
+  return h;
+}
+function lbListHTML(rows){
+  return `<ol class="lb">${rows.map((r,i)=>`<li class="${r.id===LB.uid||(r.sid&&r.sid===LB.sid)?"me":""}"><span class="rk">${i+1}</span><span class="who"><span data-who="${i}"></span>${badgesHTML(r)}</span><span class="pts">${r.xp}</span></li>`).join("")}</ol>`;
+}
+
+/* ---------- classement de la semaine + champion ---------- */
+function dedupeRows(data, max){
+  const seen = new Set(), rows = [];
+  for (const x of data){ const k = x.sid || x.id || x.uid; if (seen.has(k)) continue; seen.add(k); rows.push({id:x.id||x.uid, sid:x.sid||"", pseudo:String(x.pseudo||"").slice(0,20), xp:Math.round(+x.xp||0)}); if (rows.length>=max) break; }
+  return rows;
+}
+async function sbWeekly(){
+  if (!SB) return;
+  try {
+    const [w, c] = await Promise.all([
+      SB.from("weekly").select("uid,sid,pseudo,xp").eq("week", weekKey()).order("xp",{ascending:false}).order("updated_at",{ascending:true}).limit(60),
+      SB.from("champions").select("week,uid,sid,pseudo,xp").order("week",{ascending:false}).limit(200)]);
+    if (!w.error) LB.wrows = dedupeRows(w.data, 30);
+    if (!c.error) CHAMPS = c.data || [];
+  } catch(e){}
+}
+async function sbChampion(){
+  if (!SB) return;
+  try { const r = await SB.rpc("weekly_champion"); if (!r.error) CH = r.data || null; } catch(e){}
+  if (S.screen==="home"){ const el = document.getElementById("champ"); if (el) el.outerHTML = championHTML(); }
+}
+const iAmChampion = () => !!(CH && ((CH.sid && LB.sid && CH.sid===LB.sid) || (CH.uid && CH.uid===LB.uid)));
+function championHTML(){
+  if (!SB || !CH) return `<div id="champ" hidden></div>`;
+  const me = iAmChampion(), q = CH.quote || "";
+  const form = me && (!q || LB.qedit) ? `<div class="cqrow"><input id="cq" maxlength="120" placeholder="Ta citation de la semaine (120 caractères)" value="${esc(LB.qdraft!=null?LB.qdraft:q)}"><button class="cta sm" data-cq="save" ${LB.qbusy?"disabled":""}>Publier</button></div>` : "";
+  return `<section class="champ" id="champ"><span class="crownbig" aria-hidden="true">👑</span><div class="chbody">
+    <span class="eyebrow">Champion de la semaine du ${frDate(CH.week)}${me?" · c'est toi !":""}</span>
+    <h2><span id="chname"></span> <span class="mono chxp">${Math.round(+CH.xp||0)} XP</span></h2>
+    ${q && !(me && LB.qedit) ? `<blockquote>« <span id="chquote"></span> »</blockquote>` : (!me ? `<p class="hint">Pas de citation cette semaine.</p>` : "")}
+    ${me && !q && !LB.qedit ? `<p class="hint">Bravo ! Laisse une citation : toute la promo la verra jusqu'à dimanche soir.</p>` : ""}
+    ${form}${me && q && !LB.qedit ? `<button class="linkbtn" data-cq="edit">Modifier ma citation</button>` : ""}
+    ${LB.qmsg?`<p class="note">${esc(LB.qmsg)}</p>`:""}</div></section>`;
+}
+function fillChampion(){
+  const n = document.getElementById("chname"); if (n && CH) n.textContent = CH.pseudo || "Anonyme";
+  const q = document.getElementById("chquote"); if (q && CH) q.textContent = CH.quote || "";
+}
+async function setQuote(){
+  const i = document.getElementById("cq"); const v = String(i ? i.value : "").replace(/\s+/g," ").trim().slice(0,120);
+  LB.qbusy = true; LB.qdraft = v;
+  try {
+    const r = await SB.rpc("set_champion_quote", {p_code:G.code||"", p_quote:v});
+    if (r.error) throw r.error;
+    if (r.data==="ok"){ CH.quote = v; LB.qedit = false; LB.qdraft = null; LB.qmsg = v ? "Citation publiée." : "Citation retirée."; }
+    else LB.qmsg = "Seul le champion en titre peut écrire la citation.";
+  } catch(e){ LB.qmsg = "Publication impossible pour le moment. Réessaie plus tard."; }
+  LB.qbusy = false;
+  const el = document.getElementById("champ"); if (el){ el.outerHTML = championHTML(); fillChampion(); }
+}
+
+/* ---------- notes de patch ---------- */
+function openPatch(){
+  sheetId = "patch";
+  G.seenV = VERSION; try { localStorage.setItem(LSK, JSON.stringify(G)); } catch(e){}
+  sheetEl.innerHTML = `<div class="sheetbg" id="sbg"><div class="sheet" role="dialog" aria-modal="true" aria-label="Notes de patch" style="--w:var(--sel)">
+    <div class="shead"><div><span class="eyebrow">Notes de patch</span><h2>Metabolix v${VERSION}</h2></div><button class="x" id="sx" aria-label="Fermer">✕</button></div>
+    ${PATCH.map(p=>`<div class="patch"><h3>Version ${p.v} <span class="hint">· ${p.d}</span></h3><ul>${p.items.map(t=>`<li>${esc(t)}</li>`).join("")}</ul></div>`).join("")}
+    <button class="cta" id="sx2">C'est parti</button></div></div>`;
+}
+function maybePatch(){
+  if (G.seenV===VERSION) return;
+  if (!G.xp){ G.seenV = VERSION; try { localStorage.setItem(LSK, JSON.stringify(G)); } catch(e){} return; }
+  if (!sheetId) openPatch();
+}
+
 /* ================== OUTILS ================== */
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const shuffle = a => { for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
@@ -1742,7 +1896,7 @@ function lev(a,b){ const m=a.length,n=b.length; if(!m) return n; if(!n) return m
   for(let i=1;i<=m;i++){ const cur=[i]; for(let j=1;j<=n;j++) cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1)); prev=cur; }
   return prev[n]; }
 function qty(t){
-  const m = nrm(t).match(/^(\d+(?: \d+)?)(?: (.+))?$/); if (!m) return null;
+  const m = nrm(t).replace(/(\d)([a-z])/g,"$1 $2").match(/^(\d+(?: \d+)?)(?: (.+))?$/); if (!m) return null;
   const u = m[2] ? m[2].split(" ").map(w=>w.replace(/s$/,"")) : [];
   if (u.some(w=>/^\d+$/.test(w))) return null;
   return {n:m[1], u};
@@ -1922,7 +2076,7 @@ function optionsFor(s){
   initBank();
   const n = R.mode==="a" ? 2 : R.mode==="i" ? 4 : 5;
   const seen = new Set([nrm(s.ans)]), out = [];
-  const take = (pool, max) => { for (const t of pool){ if (out.length>=max) break; const k=nrm(t); if (!k || seen.has(k)) continue; seen.add(k); out.push(norm(t)); } };
+  const take = (pool, max) => { for (const t of pool){ if (out.length>=max) break; const k=nrm(t); if (!k || seen.has(k)) continue; if (s.kind==="cell" && qtyMatch(t, s)) continue; seen.add(k); out.push(norm(t)); } };
   if (s.kind==="cell"){
     take(shuffle(R.slots.filter(x=>x.col===s.col).map(x=>x.ans)), n);
     take(shuffle((R.L.traps||[]).filter(t=>KIND[norm(t)]==="cell")), n);
@@ -2000,7 +2154,7 @@ function answer(text){
   if (!R || R.status!=="play") return;
   const s = cur(); if (text==null || !String(text).trim()) return;
   s.txt = String(text).trim();
-  const ok = R.typing ? (nrm(s.txt)===nrm(s.ans) || qtyMatch(s.txt,s)) : norm(s.txt)===s.ans;
+  const ok = R.typing ? (nrm(s.txt)===nrm(s.ans) || qtyMatch(s.txt,s)) : (norm(s.txt)===s.ans || (s.kind==="cell" && qtyMatch(s.txt,s)));
   s.res = ok ? "ok" : "bad";
   R.splits.push((Date.now()-R.t0)/1000);
   R.lastId = s.id;
@@ -2055,7 +2209,7 @@ function finish(won){
   // série de jours
   const today = dayStr();
   if (G.lastDay !== today){ const y = new Date(); y.setDate(y.getDate()-1); G.streak = (G.lastDay===dayStr(y)) ? (G.streak||0)+1 : 1; G.lastDay = today; }
-  G.xp += gained;
+  addXP(gained);
   save();
   R.status = "end";
   R.end = {won, perfect, acc, bonus, gained, time, before, after:{m:mastery(L.id), stars:newStars, rank:rankOf(G.xp)}, st, record, prevBest, next:nextReview(L.id)};
@@ -2229,7 +2383,7 @@ function deskHTML(){
     </div></div>`;
   }
   return `<div class="desk"><div class="in">${head}
-    <div class="opts">${R.opts.map((t,i)=>`<button class="opt" data-o="${i}"><kbd>${i+1}</kbd><span>${esc(t)}</span></button>`).join("")}</div>
+    <div class="opts fresh">${R.opts.map((t,i)=>`<button class="opt" data-o="${i}"><kbd>${i+1}</kbd><span>${esc(t)}</span></button>`).join("")}</div>
   </div></div>`;
 }
 function sugHTML(){
@@ -2325,6 +2479,7 @@ function homeHTML(){
         </div>
       </div>
     </header>
+    ${championHTML()}
     <div class="home"><div class="col">
       <section class="sect"><div class="sect-head"><h2>Aujourd'hui</h2><span class="eyebrow">${dayStr().split("-").reverse().join("/")}</span></div>
         <div class="today">
@@ -2341,9 +2496,9 @@ function homeHTML(){
       <div class="worlds">${worlds}</div>
     </div>
     <aside class="aside" id="lbbox"></aside></div>
-    <footer class="foot"><p>Fait par <span class="sig">floko</span> · jeu non officiel, d'après les ronéos de l'UE 3.3. Il peut contenir des erreurs : en cas de doute, c'est le cours qui fait foi.${reportOn()?` <button class="linkbtn" data-report="Général">Signaler une erreur</button>`:""}</p></footer></div>`;
+    <footer class="foot"><p><button class="linkbtn" data-patch="1">v${VERSION} · notes de patch</button> · Fait par <span class="sig">floko</span> · jeu non officiel, d'après les ronéos de l'UE 3.3. Il peut contenir des erreurs : en cas de doute, c'est le cours qui fait foi.${reportOn()?` <button class="linkbtn" data-report="Général">Signaler une erreur</button>`:""}</p></footer></div>`;
 }
-function renderHome(){ clearInterval(timerId); S.screen="home"; R=null; LR=null; GQ=null; app.innerHTML = homeHTML(); renderLB(); }
+function renderHome(){ clearInterval(timerId); S.screen="home"; R=null; LR=null; GQ=null; app.innerHTML = homeHTML(); fillChampion(); renderLB(); maybePatch(); }
 
 /* ---------- fiche voie ---------- */
 let sheetId = null;
@@ -2378,6 +2533,10 @@ app.addEventListener("click", e => {
   if (S.screen==="learn"){ const b = e.target.closest("button"); if (!b) return; if (b.dataset.l) return learnAct(b.dataset.l); if (b.dataset.lq!==undefined) return learnPick(+b.dataset.lq); return; }
   if (S.screen==="home"){
     const sv = e.target.closest("[data-save]"); if (sv){ saveBoxAct(sv.dataset.save); return; }
+    const pv = e.target.closest("[data-pv]"); if (pv){ const i = document.getElementById("pseudo"); claimPseudo(i ? i.value : G.pseudo); return; }
+    const lt = e.target.closest("[data-lbt]"); if (lt){ LB.tab = lt.dataset.lbt; renderLB(); return; }
+    const cq = e.target.closest("[data-cq]"); if (cq){ if (cq.dataset.cq==="edit"){ LB.qedit = true; LB.qmsg = ""; const el = document.getElementById("champ"); if (el){ el.outerHTML = championHTML(); fillChampion(); } const i = document.getElementById("cq"); if (i) i.focus(); } else setQuote(); return; }
+    const pt = e.target.closest("[data-patch]"); if (pt){ openPatch(); return; }
     const gb = e.target.closest("[data-guess]"); if (gb){ startGuess(); return; }
     const gw = e.target.closest("[data-gw]"); if (gw){ guessW = gw.dataset.gw; renderHome(); return; }
     const lb = e.target.closest("[data-learn]"); if (lb){ startLesson(lb.dataset.learn); return; }
@@ -2404,7 +2563,7 @@ app.addEventListener("click", e => {
 sheetEl.addEventListener("click", e => {
   if (e.target.id==="sbg"){ closeSheet(); return; }
   const b = e.target.closest("button"); if (!b) return;
-  if (b.id==="sx"){ closeSheet(); return; }
+  if (b.id==="sx" || b.id==="sx2"){ closeSheet(); return; }
   if (b.dataset.report){ openReport(b.dataset.report); return; }
   if (b.id==="rsend"){ sendReport(); return; }
   if (b.dataset.d){ G.mode = b.dataset.d; save(); openSheet(sheetId); return; }
@@ -2412,8 +2571,9 @@ sheetEl.addEventListener("click", e => {
   if (b.dataset.learn){ startLesson(b.dataset.learn); return; }
   if (b.id==="go") startRun(sheetId, G.mode, G.input==="clavier");
 });
+document.addEventListener("mousemove", () => { const f = document.querySelectorAll(".opts.fresh"); for (const x of f) x.classList.remove("fresh"); }, {passive:true});
 document.addEventListener("keydown", e => {
-  if (sheetId){ if (e.key==="Escape") closeSheet(); if (sheetId==="mol" || sheetId==="report" || e.key==="Escape") return; }
+  if (sheetId){ if (e.key==="Escape") closeSheet(); if (sheetId==="mol" || sheetId==="report" || sheetId==="patch" || e.key==="Escape") return; }
   if (S.screen==="guess" && GQ){
     if (GQ.status==="fb" && (e.key==="Enter"||e.key===" ") && e.target.id!=="gnext"){ e.preventDefault(); guessNext(); return; }
     if (GQ.status!=="play") return;
@@ -2426,6 +2586,8 @@ document.addEventListener("keydown", e => {
     if (LR.phase==="read" && e.target===document.body && (e.key==="ArrowRight"||e.key==="ArrowLeft")){ learnAct(e.key==="ArrowRight"?"next":"prev"); return; }
     return;
   }
+  if (S.screen==="home" && e.key==="Enter" && e.target.id==="pseudo"){ e.preventDefault(); claimPseudo(e.target.value); return; }
+  if (S.screen==="home" && e.key==="Enter" && e.target.id==="cq"){ e.preventDefault(); setQuote(); return; }
   if (S.screen==="home" && !sheetId && (e.key==="Enter"||e.key===" ")){ const t = e.target && e.target.closest && e.target.closest("g[data-v]"); if (t){ e.preventDefault(); openSheet(t.dataset.v); return; } }
   if (!R || S.screen!=="play") return;
   if ((R.status==="fb"||R.status==="lostfb") && (e.key==="Enter"||e.key===" ") && e.target.id!=="cont"){ e.preventDefault(); proceed(); return; }
@@ -2440,30 +2602,39 @@ document.addEventListener("keydown", e => {
 app.addEventListener("input", e => {
   if (e.target.id==="gans" && GQ){ GQ.sugs = guessSugs(e.target.value); const bx = document.getElementById("gsugs"); if (bx) bx.innerHTML = GQ.sugs.map((t,i)=>`<button class="sug" data-gs="${i}">${esc(t)}</button>`).join("") || `<span class="hint">Aucun nom du jeu ne ressemble à ça. Tu peux quand même valider.</span>`; }
   if (e.target.id==="ans" && R && R.typing){ R.sugs = suggest(e.target.value); R.sugIdx = -1; const bx = document.getElementById("sugs"); if (bx) bx.innerHTML = sugHTML(); }
-  if (e.target.id==="pseudo"){ clearTimeout(pseudoT); const v = e.target.value.trim(); pseudoT = setTimeout(()=>{ if (v.length>=2 && v.length<=20 && v!==G.pseudo){ G.pseudo = v; save(); renderLB(); } }, 800); }
+  if (e.target.id==="pseudo"){ LB.pdraft = e.target.value; }
+  if (e.target.id==="cq"){ LB.qdraft = e.target.value; }
 });
 let pseudoT = null;
 
 /* ================== CLASSEMENT PARTAGÉ ================== */
-let db = null, LB = {state:"loading", rows:null, uid:null, readOnly:false};
+let db = null, LB = {state:"loading", rows:null, wrows:null, tab:"week", uid:null, readOnly:false, pdraft:null, pmsg:"", pok:false, pbusy:false, qedit:false, qdraft:null, qmsg:"", qbusy:false};
 function renderLB(){
   const box = document.getElementById("lbbox"); if (!box) return;
+  const act = document.activeElement, aid = act && box.contains(act) ? act.id : null;
+  let sel = null; try { if (aid && act.selectionStart!=null) sel = [act.selectionStart, act.selectionEnd]; } catch(e){}
+  const wk = !!SB && LB.tab==="week";
+  const rows = wk ? LB.wrows : LB.rows;
   let body;
   if (LB.state==="loading") body = `<p class="note">Chargement du classement…</p>`;
   else if (LB.state==="off") body = `<p class="note">Classement indisponible pour le moment. Ta progression reste enregistrée dans ce navigateur.</p>`;
-  else if (!LB.rows || !LB.rows.length) body = `<p class="note">Personne au classement pour l'instant. Choisis un pseudo et termine une voie.</p>`;
-  else body = `<ol class="lb">${LB.rows.map((r,i)=>`<li class="${r.id===LB.uid||(r.sid&&r.sid===LB.sid)?"me":""}"><span class="rk">${i+1}</span><span class="who" data-who="${i}"></span><span class="pts">${r.xp}</span></li>`).join("")}</ol>`;
-  box.innerHTML = `<h2>Classement</h2><span class="eyebrow">XP totale</span>
-    <label for="pseudo">Ton pseudo<input id="pseudo" maxlength="20" autocomplete="nickname" placeholder="ex. GAPDH_du_93" value="${esc(G.pseudo)}"></label>
+  else if (!rows || !rows.length) body = `<p class="note">${wk?"Personne n'a encore marqué de points cette semaine. Le premier à jouer prend la tête !":"Personne au classement pour l'instant. Choisis un pseudo et termine une voie."}</p>`;
+  else body = lbListHTML(rows);
+  const tabs = SB && LB.state==="on" ? `<div class="lbtabs" role="tablist"><button data-lbt="week" aria-pressed="${wk}">Cette semaine</button><button data-lbt="all" aria-pressed="${!wk}">Général</button></div>` : "";
+  box.innerHTML = `<h2>Classement</h2>${tabs}<span class="eyebrow">${wk?"XP depuis lundi · toi : "+weekXP()+" XP":"XP totale"}</span>
+    ${pseudoHTML()}
     ${body}
+    ${wk?`<p class="note">Remise à zéro chaque lundi à 0 h. Le n°1 devient champion 👑 de la semaine suivante.</p>`:""}
     ${LB.readOnly && LB.state==="on" ? `<p class="note">Tu peux voir le classement mais pas y publier ton score avec ton accès actuel.</p>` : ""}
     <p class="note">Rangs : ${RANKS.map(r=>esc(r[0])).join(" → ")}.</p>${saveBoxHTML()}`;
-  if (LB.rows) box.querySelectorAll("[data-who]").forEach(el => { el.textContent = LB.rows[+el.dataset.who].pseudo || "Anonyme"; });
+  if (rows) box.querySelectorAll("[data-who]").forEach(el => { el.textContent = rows[+el.dataset.who].pseudo || "Anonyme"; });
+  if (aid){ const el = document.getElementById(aid); if (el){ if (act.value!=null && el.value!==undefined) el.value = act.value; el.focus({preventScroll:true}); if (sel) try { el.setSelectionRange(sel[0], sel[1]); } catch(e){} } }
 }
 let saving = Promise.resolve();
 let SB = null;
 async function sbTop(){
   if (!SB) return;
+  await sbWeekly();
   const r = await SB.from("scores").select("id,pseudo,xp,sid").order("xp",{ascending:false}).limit(60);
   if (r.error){ LB.state = "off"; }
   else {
@@ -2477,7 +2648,10 @@ function saveRemote(){
   if (SB && LB.uid){
     cloudSave();
     const body = {id:LB.uid, sid:LB.sid||"", pseudo:(G.pseudo||"").slice(0,20), xp:Math.min(5000000,Math.max(0,Math.round(G.xp))), stars:starsTotal(), rank:RANKS[rankOf(G.xp)][0], updated_at:new Date().toISOString()};
-    saving = saving.then(()=>SB.from("scores").upsert(body)).then(r=>{ if (r && r.error) console.warn(r.error.message); return sbTop(); }).catch(()=>{});
+    const wxp = weekXP();
+    saving = saving.then(()=>SB.from("scores").upsert(body)).then(r=>{ if (r && r.error) console.warn(r.error.message); })
+      .then(()=> wxp>0 ? SB.from("weekly").upsert({week:weekKey(), uid:LB.uid, sid:LB.sid||"", pseudo:(G.pseudo||"").slice(0,20), xp:Math.round(wxp)}, {onConflict:"week,uid"}) : null)
+      .then(r=>{ if (r && r.error) console.warn(r.error.message); return sbTop(); }).catch(()=>{});
     return;
   }
   if (!db || !LB.uid || LB.readOnly) return;
@@ -2493,6 +2667,8 @@ function saveRemote(){
       if (!s){ const r = await SB.auth.signInAnonymously(); if (r.error) throw r.error; s = r.data.session; }
       LB.uid = s.user.id;
       await cloudInit();
+      if (G.pseudo && !G.pseudoOk) await claimPseudo(G.pseudo, true);
+      await sbChampion(); setInterval(sbChampion, 3600000);
       await sbTop(); setInterval(sbTop, 60000);
       if (G.xp>0) saveRemote(); else renderLB();
       return;
