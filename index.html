@@ -382,6 +382,38 @@ tr.why td{font-size:13px;color:var(--muted);background:transparent;border-top:0;
 .patch h3{font-size:16px;font-weight:800}
 .patch ul{margin:6px 0 0;padding-left:18px;display:grid;gap:6px;line-height:1.5}
 .chbody .linkbtn{justify-self:start}
+#toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);opacity:0;pointer-events:none;z-index:60;background:var(--ink);color:var(--bg);font-weight:700;font-size:14px;padding:10px 16px;border-radius:12px;box-shadow:0 8px 30px -8px #000;max-width:min(92vw,520px);text-align:center;transition:opacity .25s,transform .25s}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+.myplace{margin-top:10px;width:100%;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;background:var(--sel-soft);border:1px solid var(--sel);color:var(--ink);border-radius:10px;padding:8px 12px;font-weight:700;font-size:14px;text-align:left}
+.lb li.sep{justify-content:center;color:var(--muted);padding:2px 0;background:none}
+.lb li.sep{display:block;text-align:center}
+.linkbtn.more{justify-self:start;font-size:13px}
+.note.mine{color:var(--ink)}
+.rkd{display:grid;gap:4px;border:1px solid var(--sel);background:var(--sel-soft);border-radius:12px;padding:10px 12px}
+.rkd b{font-size:18px}
+.rkd .up{color:var(--ok);font-size:14px;margin-left:6px}
+.qdone{display:grid;gap:4px}
+.qdone span{color:var(--ok);font-weight:700;font-size:14px}
+.questcard{border:1.5px solid var(--gold)}
+.tag2.qt{color:var(--gold)}
+.quests{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.quests li{display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;font-size:14px}
+.quests li b{font-family:var(--f-mono);font-size:12px;color:var(--gold)}
+.qbox{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--rule);display:grid;place-items:center;font-size:13px;font-weight:800}
+.quests li.done{color:var(--muted)}
+.quests li.done span:nth-child(2){text-decoration:line-through}
+.quests li.done .qbox{background:var(--ok);border-color:var(--ok);color:var(--bg)}
+.defibox{border:1.5px solid var(--heme)}
+.tag2.dt{color:var(--heme)}
+.defis{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.defis li{display:grid;gap:4px;font-size:14px}
+.defis .dr{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:13px}
+.defis .win{color:var(--ok)} .defis .lose{color:var(--bad)}
+.cta.defi{background:var(--heme);color:var(--bg)}
+.dres{display:grid;gap:4px;border-radius:12px;padding:10px 12px;border:1.5px solid}
+.dres.win{border-color:var(--ok);background:var(--ok-soft)} .dres.lose{border-color:var(--bad);background:var(--bad-soft)}
+.dres b{font-size:18px}
+.dlink{word-break:break-all;font-size:13px}
 .molsvg .k0{fill:none;fill-rule:evenodd;stroke:#FF7A72;stroke-width:2.0px;}.molsvg .k1{fill:none;fill-rule:evenodd;stroke:#EDF2F9;stroke-width:2.0px;}.molsvg .k2{fill:#EDF2F9;fill-rule:evenodd;stroke:#EDF2F9;stroke-width:0.5px;;}.molsvg .k3{fill:#FF7A72;fill-rule:evenodd;stroke:#FF7A72;stroke-width:0.5px;;}.molsvg .k4{fill:none;fill-rule:evenodd;stroke:#EDF2F9;stroke-width:1.0px;}.molsvg .k5{fill:none;fill-rule:evenodd;stroke:#FF7A72;stroke-width:1.0px;}.molsvg .k6{fill:none;stroke:#EDF2F9;stroke-width:2.0px;;}.molsvg .k7{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k8{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k9{fill:none;fill-rule:evenodd;stroke:#FFB259;stroke-width:2.0px;}.molsvg .k10{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k11{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k12{font-size:19px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k13{font-size:19px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k14{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k15{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k16{font-size:22px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k17{fill:#72B7FF;fill-rule:evenodd;stroke:#72B7FF;stroke-width:0.5px;;}.molsvg .k18{fill:none;fill-rule:evenodd;stroke:#72B7FF;stroke-width:2.0px;}.molsvg .k19{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k20{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k21{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k22{font-size:9px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k23{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#EDF2F9}.molsvg .k24{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k25{fill:none;fill-rule:evenodd;stroke:#9EB7FF;stroke-width:2.0px;}.molsvg .k26{fill:none;fill-rule:evenodd;stroke:#F9D84C;stroke-width:2.0px;}.molsvg .k27{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k28{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k29{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k30{font-size:11px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k31{font-size:11px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k32{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k33{fill:#9EB7FF;fill-rule:evenodd;stroke:#9EB7FF;stroke-width:0.5px;;}.molsvg .k34{font-size:17px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k35{font-size:20px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k36{font-size:20px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k37{font-size:20px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k38{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k39{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k40{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#F9D84C}.molsvg .k41{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k42{font-size:21px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k43{fill:none;fill-rule:evenodd;stroke:#9EB7FF;stroke-width:1.0px;}.molsvg .k44{font-size:20px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k45{font-size:13px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k46{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k47{font-size:10px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k48{fill:none;fill-rule:evenodd;stroke:#72B7FF;stroke-width:1.0px;}.molsvg .k49{font-size:14px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#9EB7FF}.molsvg .k50{font-size:9px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FF7A72}.molsvg .k51{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#FFB259}.molsvg .k52{font-size:15px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#EDF2F9}.molsvg .k53{font-size:19px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k54{font-size:12px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k55{font-size:18px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k56{font-size:16px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}.molsvg .k57{font-size:22px;font-weight:normal;stroke:none;font-family:sans-serif;text-anchor:start;fill:#72B7FF}
 </style>
 <script src="supabase.js"></script>
@@ -1335,6 +1367,7 @@ function lessonSteps(L){
 function startLesson(id){
   const L = LEVELS.find(l=>l.id===id), T = LESSONS[id]; if (!L || !T) return;
   closeSheet();
+  RK0 = rankSnap();
   LR = {L, T, steps:lessonSteps(L), i:-1, phase:"read", qs:null, qi:0, ok:0, pick:null, gain:0};
   S.screen = "learn"; R = null; clearInterval(timerId);
   renderLearn(true);
@@ -1447,6 +1480,7 @@ function doneHTML(){
   return `<div class="lcard"><span class="eyebrow">Leçon terminée</span><h2>${LR.ok} / ${n} au mini-quiz</h2>
     <p>${LR.ok===n?"Sans faute. Tu peux attaquer la voie en Interne directement.":LR.ok>=3?"Bonne base. Joue la voie en Apprenti pour fixer les noms.":"Relis les étapes ratées, puis joue la voie en Apprenti : les erreurs se corrigent en jouant."}</p>
     <p class="hint">+${LR.gain} XP${first?" (1ʳᵉ fois)":""} · ${lessonsDone()} / ${Object.keys(LESSONS).length} leçons faites</p>
+    ${questsDoneHTML(LR.quests)}<div id="rkdelta">${rkDeltaHTML()}</div>
     <p class="tip">${esc(L.tip)}</p>
     <div class="lnav"><button class="cta alt" data-l="restart">Revoir la leçon</button><button class="cta alt" data-l="home">Carte</button><button class="cta" data-l="play">Jouer la voie</button></div></div>`;
 }
@@ -1463,6 +1497,7 @@ function renderLearn(first){
       <div class="prog" aria-hidden="true"><i style="width:${Math.round(100*at/total)}%"></i></div>
       <div class="lgrid"><section class="lside" id="lcard">${card}</section>${lines?`<section class="board lboard">${lines}</section>`:""}</div>
     </main></div>`;
+  fillRkDelta();
   if (first) window.scrollTo(0,0);
   else { const c = document.getElementById("lcard"); if (c && c.getBoundingClientRect && c.getBoundingClientRect().top < 0) c.scrollIntoView({block:"start", behavior: reduced()?"auto":"smooth"}); }
   const hereEl = app.querySelector(".lhere");
@@ -1495,7 +1530,7 @@ function finishLesson(){
   G.lessons[LR.L.id] = {t:Date.now(), best:Math.max(prev?prev.best:0, LR.ok), n:LR.qs.length};
   const today = dayStr();
   if (G.lastDay !== today){ const y = new Date(); y.setDate(y.getDate()-1); G.streak = (G.lastDay===dayStr(y)) ? (G.streak||0)+1 : 1; G.lastDay = today; }
-  addXP(LR.gain); save();
+  addXP(LR.gain); LR.quests = questEvent("lesson", {ok:LR.ok, n:LR.qs.length}); save();
   LR.phase = "done";
 }
 
@@ -1633,6 +1668,7 @@ function startGuess(){
   if (pool.length < 4) return;
   closeSheet(); R = null; LR = null; clearInterval(timerId);
   const n = Math.min(10, pool.length);
+  RK0 = rankSnap();
   GQ = {list:pool.slice(0,n), k:0, hearts:3, combo:0, best:0, pts:0, good:0, wrongs:[], typing:G.input==="clavier", pick:null, txt:null, opts:null, sugs:[], status:"play", w:guessW};
   GQ.opts = guessOpts(GQ.list[0]);
   S.screen = "guess"; renderGuess(true);
@@ -1678,7 +1714,7 @@ function guessFinish(){
   if (GQ.record) G.molBest[GQ.w] = GQ.gained;
   const today = dayStr();
   if (G.lastDay !== today){ const y = new Date(); y.setDate(y.getDate()-1); G.streak = (G.lastDay===dayStr(y)) ? (G.streak||0)+1 : 1; G.lastDay = today; }
-  addXP(GQ.gained); save();
+  addXP(GQ.gained); GQ.quests = questEvent("guess", {good:GQ.good}); save();
   GQ.status = "end"; GQ.won = won; GQ.perfect = perfect;
   renderGuess(true);
 }
@@ -1703,6 +1739,7 @@ function renderGuess(first){
       <h2>${GQ.perfect?"Œil de chimiste !":GQ.won?"Bien vu":"K.-O. moléculaire"}</h2>
       <div class="kv"><div><span class="eyebrow">XP gagnée</span><b class="mono">+${GQ.gained}</b><span class="hint">${GQ.pts} en jeu${GQ.bonus?" + "+GQ.bonus+" de bonus":""}</span></div>
         <div><span class="eyebrow">Record · ${esc(W.name)}</span><b class="mono">${GQ.record?"Nouveau !":GQ.prev}</b><span class="hint">${GQ.record&&GQ.prev?"Ancien : "+GQ.prev:""}</span></div></div>
+      ${questsDoneHTML(GQ.quests)}<div id="rkdelta">${rkDeltaHTML()}</div>
       ${GQ.wrongs.length?`<div class="eyebrow">À revoir</div><div class="gwrong">${GQ.wrongs.map(w=>molCardHTML(w.k,true).replace("</figcaption>",`</figcaption><p class="hint">Tu as répondu « ${esc(w.txt)} ».</p>`)).join("")}</div>`:""}
       <div class="acts"><button class="cta" data-g="again">Rejouer</button><button class="cta alt" data-g="home">Carte</button></div></section>`;
   } else {
@@ -1723,6 +1760,7 @@ function renderGuess(first){
       <h1>Devine la molécule<small>${esc(W.name)} · structures ChEMBL et cours</small></h1>
       <div class="meters"><span class="hearts" aria-label="${GQ.hearts} cœurs restants">${hearts}</span><span class="combo ${mult>=4?"fire":mult>=2?"hot":""}">${GQ.combo>1?"Combo "+GQ.combo+" · ":""}×${mult}</span><span class="score">${GQ.pts} pts</span></div></div></div>
     <main class="play"><div class="prog" aria-hidden="true"><i style="width:${Math.round(100*(GQ.k+(GQ.status==="play"?0:1))/GQ.list.length)}%"></i></div>${body}</main>${desk}</div>`;
+  fillRkDelta();
   if (first) window.scrollTo(0,0);
   if (GQ.typing && GQ.status==="play"){ const i = document.getElementById("gans"); let fine=false; try { fine = matchMedia("(pointer: fine)").matches; } catch(e){} if (i && (!first||fine)) i.focus({preventScroll:true}); }
 }
@@ -1748,8 +1786,15 @@ function guessHomeHTML(){
 }
 
 /* ================== v1.1 : SEMAINE, PSEUDO VALIDÉ, CHAMPION, NOTES DE PATCH ================== */
-const VERSION = "1.1";
+const VERSION = "1.2";
 const PATCH = [
+  {v:"1.2", d:"27/10/2026", items:[
+    "Nouveau : défis entre amis. À la fin d'une voie, « ⚔️ Défier un ami » crée un lien : ton ami joue la même voie avec les mêmes propositions, contre ton fantôme. +50 XP au vainqueur, revanche en un clic, résultats dans « Défis entre amis ».",
+    "Nouveau : quêtes du jour. 3 objectifs par jour (+60 XP chacun) et un coffre à +100 XP quand les 3 sont faites.",
+    "Classement : ta place est toujours affichée (« 12ᵉ sur 87 »), même hors du top, avec les XP qu'il te manque pour gagner une place.",
+    "Classement : top 10 par défaut, bouton « Voir le top 50 ».",
+    "Fin de partie : tes places gagnées cette semaine et l'écart avec le joueur juste devant toi.",
+    "Plus léger : le classement se met à jour toutes les 2 min 30 quand le jeu est ouvert (et pas en arrière-plan)."]},
   {v:"1.1", d:"21/10/2026", items:[
     "Nouveau : classement de la semaine, remis à zéro chaque lundi à 0 h (heure de Paris). Tous les XP comptent : voies, leçons et Devine la molécule.",
     "Nouveau : le n°1 de la semaine devient champion. Il est affiché en haut de l'accueil toute la semaine suivante, avec sa citation.",
@@ -1822,16 +1867,17 @@ function dedupeRows(data, max){
 async function sbWeekly(){
   if (!SB) return;
   try {
-    const [w, c] = await Promise.all([
-      SB.from("weekly").select("uid,sid,pseudo,xp").eq("week", weekKey()).order("xp",{ascending:false}).order("updated_at",{ascending:true}).limit(60),
-      SB.from("champions").select("week,uid,sid,pseudo,xp").order("week",{ascending:false}).limit(200)]);
-    if (!w.error) LB.wrows = dedupeRows(w.data, 30);
-    if (!c.error) CHAMPS = c.data || [];
+    const w = await SB.from("weekly").select("uid,sid,pseudo,xp").eq("week", weekKey()).order("xp",{ascending:false}).order("updated_at",{ascending:true}).limit(100);
+    if (!w.error) LB.wrows = dedupeRows(w.data, 50);
   } catch(e){}
 }
 async function sbChampion(){
   if (!SB) return;
-  try { const r = await SB.rpc("weekly_champion"); if (!r.error) CH = r.data || null; } catch(e){}
+  try {
+    const [r, c] = await Promise.all([SB.rpc("weekly_champion"), SB.from("champions").select("week,uid,sid,pseudo,xp").order("week",{ascending:false}).limit(200)]);
+    if (!r.error) CH = r.data || null;
+    if (!c.error) CHAMPS = c.data || [];
+  } catch(e){}
   if (S.screen==="home"){ const el = document.getElementById("champ"); if (el) el.outerHTML = championHTML(); }
 }
 const iAmChampion = () => !!(CH && ((CH.sid && LB.sid && CH.sid===LB.sid) || (CH.uid && CH.uid===LB.uid)));
@@ -1879,9 +1925,235 @@ function maybePatch(){
   if (!sheetId) openPatch();
 }
 
+/* ================== v1.2 : CLASSEMENT LISIBLE, DÉFIS, QUÊTES DU JOUR ================== */
+
+/* ---------- tirage au sort à graine (mêmes propositions pour un défi) ---------- */
+let RNG = Math.random;
+function mulberry32(a){ return function(){ a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const newSeed = () => (Math.random() * 4294967296) >>> 0;
+const ordinal = n => n===1 ? "1ᵉʳ" : n+"ᵉ";
+
+/* ---------- toasts ---------- */
+let toastT = null;
+function showToast(msg){ try { toastIn(msg); } catch(e){} }
+function toastIn(msg){
+  let el = document.getElementById("toast");
+  if (!el){ el = document.createElement("div"); el.id = "toast"; el.setAttribute("role","status"); document.body.appendChild(el); }
+  el.innerHTML = (el.classList.contains("show") ? el.innerHTML + "<br>" : "") + esc(msg);
+  el.classList.add("show"); clearTimeout(toastT);
+  toastT = setTimeout(() => { el.classList.remove("show"); el.innerHTML = ""; }, 3600);
+}
+
+/* ---------- ma place au classement ---------- */
+let RK0 = null;
+const rankSnap = () => LB.me && LB.me.w_rank && LB.me.w_xp ? {w:LB.me.w_rank} : null;
+async function sbRanks(){
+  if (!SB) return;
+  try { const r = await SB.rpc("my_ranks", {p_sid:LB.sid||""}); if (!r.error && r.data) LB.me = r.data; } catch(e){}
+}
+function rkDeltaHTML(){
+  if (!SB) return "";
+  const me = LB.me;
+  if (!me) return `<p class="hint">Mise à jour du classement…</p>`;
+  if (!me.w_xp) return "";
+  const d = RK0 && RK0.w ? RK0.w - me.w_rank : 0;
+  const ahead = me.w_ahead;
+  return `<div class="rkd"><span class="eyebrow">Classement de la semaine</span>
+    <b>${ordinal(me.w_rank)} sur ${me.w_total}${d>0?` <span class="up">▲ +${d} place${d>1?"s":""}</span>`:""}</b>
+    <span class="hint">${ahead ? `Plus que <b>${ahead.xp - me.w_xp + 1} XP</b> pour dépasser <span class="ahead"></span>` : "Tu es en tête cette semaine 👑"}</span></div>`;
+}
+function fillRkDelta(){ try { fillRk(); } catch(e){} }
+function fillRk(){
+  const el = document.getElementById("rkdelta"); if (!el || !el.querySelector) return;
+  el.innerHTML = rkDeltaHTML();
+  const a = el.querySelector(".ahead"); if (a && LB.me && LB.me.w_ahead) a.textContent = LB.me.w_ahead.pseudo || "Anonyme";
+}
+function myPlaceHTML(){
+  if (!SB || !LB.me) return "";
+  const me = LB.me;
+  const txt = me.w_xp ? `${ordinal(me.w_rank)} sur ${me.w_total} cette semaine` : `Pas encore classé cette semaine`;
+  return `<button class="myplace" data-goto="lb"><span>🏁 ${txt}</span><span class="hint">Voir le classement ↓</span></button>`;
+}
+function lbListHTML2(rows, wk){
+  const max = LB.more ? 50 : 10, shown = rows.slice(0, max);
+  const isMe = r => r.id===LB.uid || (r.sid && r.sid===LB.sid);
+  let h = `<ol class="lb">${shown.map((r,i)=>`<li class="${isMe(r)?"me":""}"><span class="rk">${i+1}</span><span class="who"><span data-who="${i}"></span>${badgesHTML(r)}</span><span class="pts">${r.xp}</span></li>`).join("")}`;
+  const me = LB.me, rank = me ? (wk ? me.w_rank : me.a_rank) : null, xp = me ? (wk ? me.w_xp : me.a_xp) : null;
+  if (me && xp && !shown.some(isMe)) h += `<li class="sep" aria-hidden="true">⋯</li><li class="me"><span class="rk">${rank}</span><span class="who"><span data-whome="1"></span></span><span class="pts">${xp}</span></li>`;
+  h += `</ol>`;
+  if (rows.length > 10) h += `<button class="linkbtn more" data-lbmore="1">${LB.more ? "Réduire au top 10" : "Voir le top 50"}</button>`;
+  if (me && xp) h += `<p class="note mine">Toi : <b>${ordinal(rank)}</b> sur ${wk ? me.w_total : me.a_total}${(wk ? me.w_ahead : me.a_ahead) ? ` · plus que ${(wk ? me.w_ahead.xp : me.a_ahead.xp) - xp + 1} XP pour gagner une place` : " · tu es en tête !"}</p>`;
+  else if (me && wk) h += `<p class="note mine">Tu n'as pas encore de points cette semaine : termine une voie pour entrer au classement.</p>`;
+  return h;
+}
+
+/* ---------- quêtes du jour ---------- */
+const QPOOL = [
+  {id:"run1", t:"Termine une voie", ev:"run", ok:e=>e.won},
+  {id:"runI", t:"Termine une voie en Interne ou en Major", ev:"run", ok:e=>e.won && e.mode!=="a"},
+  {id:"perfect", t:"Fais un sans-faute sur une voie", ev:"run", ok:e=>e.perfect},
+  {id:"combo10", t:"Atteins un combo de 10", ev:"run", ok:e=>e.bestCombo>=10},
+  {id:"daily", t:"Termine la voie du jour", ev:"run", ok:e=>e.won && e.daily},
+  {id:"typed", t:"Termine une voie en écrivant toutes tes réponses", ev:"run", ok:e=>e.won && e.typedAll},
+  {id:"mol8", t:"Trouve au moins 8 molécules sur 10", ev:"guess", ok:e=>e.good>=8},
+  {id:"lesson", t:"Termine une leçon", ev:"lesson", ok:()=>true},
+  {id:"lesson5", t:"Fais un sans-faute au quiz d'une leçon", ev:"lesson", ok:e=>e.n>0 && e.ok===e.n}
+];
+const QXP = 60, QCHEST = 100;
+function todayQuests(){
+  const d = dayStr(); let h = 11; for (const c of d) h = (h*131 + c.charCodeAt(0)) % 1000003;
+  const pool = QPOOL.slice(), out = [];
+  while (out.length < 3 && pool.length){
+    const q = pool.splice(h % pool.length, 1)[0]; h = (h*7 + 13) % 1000003;
+    if (q.id.startsWith("lesson") && out.some(x=>x.id.startsWith("lesson"))) continue;
+    out.push(q);
+  }
+  return out;
+}
+function qState(){ const d = dayStr(); if (!G.q || G.q.d!==d) G.q = {d, done:[], chest:false}; return G.q; }
+function questEvent(ev, data){
+  const st = qState(), newly = [];
+  for (const q of todayQuests()){
+    if (q.ev!==ev || st.done.includes(q.id)) continue;
+    let ok = false; try { ok = q.ok(data); } catch(e){}
+    if (ok){ st.done.push(q.id); addXP(QXP); newly.push({t:q.t, xp:QXP}); }
+  }
+  if (!st.chest && st.done.length >= 3){ st.chest = true; addXP(QCHEST); newly.push({t:"Coffre du jour : les 3 quêtes accomplies", xp:QCHEST}); }
+  newly.forEach(n => showToast(`✓ Quête : ${n.t} · +${n.xp} XP`));
+  return newly;
+}
+function questsDoneHTML(list){
+  if (!list || !list.length) return "";
+  return `<div class="qdone">${list.map(n=>`<span>✓ ${esc(n.t)} <b>+${n.xp} XP</b></span>`).join("")}</div>`;
+}
+function questsHTML(){
+  const st = qState(), qs = todayQuests(), n = qs.filter(q=>st.done.includes(q.id)).length;
+  return `<div class="tcard questcard"><span class="tag2 qt">Quêtes du jour · ${n} / 3</span>
+    <ul class="quests">${qs.map(q=>{ const d = st.done.includes(q.id); return `<li class="${d?"done":""}"><span class="qbox">${d?"✓":""}</span><span>${esc(q.t)}</span><b>+${QXP}</b></li>`; }).join("")}</ul>
+    <span class="hint">${st.chest ? "Coffre du jour ouvert : +"+QCHEST+" XP. Reviens demain !" : `Les 3 quêtes ouvrent le coffre du jour : +${QCHEST} XP. Nouvelles quêtes chaque jour à minuit.`}</span></div>`;
+}
+
+/* ---------- défis entre amis ---------- */
+let DF = {mine:[], played:[], cur:null, link:"", msg:""};
+const DEFI_RE = /^[2-9A-HJKMNP-Z]{8}$/;
+function newDefiId(){ const a = new Uint32Array(8); crypto.getRandomValues(a); return [...a].map(x=>CODE_ABC[x % CODE_ABC.length]).join(""); }
+const defiURL = id => location.origin + location.pathname + "#defi=" + id;
+const voieName = id => (LEVELS.find(l=>l.id===id)||{}).t || id;
+const defiOn = () => !!(SB && LB.uid);
+async function sbDefis(){
+  if (!SB || !LB.uid) return;
+  try {
+    let q = SB.from("defis").select("id,voie,mode,score,time_s,created_at,defi_results(pseudo,score,time_s,won,created_at)").gt("expires_at", new Date().toISOString()).order("created_at",{ascending:false}).limit(5);
+    q = LB.sid ? q.or(`uid.eq.${LB.uid},sid.eq.${LB.sid}`) : q.eq("uid", LB.uid);
+    const [m, p] = await Promise.all([q,
+      SB.from("defi_results").select("defi_id,score,won,created_at,defis(voie,mode,score,pseudo)").eq("uid", LB.uid).order("created_at",{ascending:false}).limit(5)]);
+    if (!m.error) DF.mine = m.data || [];
+    if (!p.error) DF.played = p.data || [];
+  } catch(e){}
+  if (S.screen==="home"){ const el = document.getElementById("defibox"); if (el){ el.outerHTML = defisHTML(); fillDefis(); } }
+}
+function defisHTML(){
+  if (!defiOn()) return `<div id="defibox" hidden></div>`;
+  const items = [];
+  DF.mine.forEach((d,i) => {
+    const res = (d.defi_results||[]).slice().sort((a,b)=>b.score-a.score);
+    items.push(`<li><span class="dh">⚔️ ${esc(voieName(d.voie))} · ${MODES[d.mode].n} · <b>${d.score} pts</b></span>
+      <span class="dr">${res.length ? res.map((x,j)=>`<span class="${x.won?"lose":"win"}"><span data-dfm="${i}:${j}"></span> ${x.score} ${x.won?"💥 t'a battu":"✅ battu"}</span>`).join("") : `<span class="hint">Personne ne l'a encore relevé.</span>`}
+      <button class="linkbtn" data-dshareid="${d.id}">Renvoyer le lien</button></span></li>`);
+  });
+  DF.played.forEach((r,i) => { const d = r.defis || {}; items.push(`<li><span class="dh">${r.won?"🏆":"💥"} Défi de <span data-dfp="${i}"></span> · ${esc(voieName(d.voie))}</span><span class="dr"><span class="${r.won?"win":"lose"}">${r.score} contre ${d.score} : ${r.won?"gagné":"perdu"}</span></span></li>`); });
+  return `<div class="tcard defibox" id="defibox"><span class="tag2 dt">Défis entre amis</span>
+    ${items.length ? `<ul class="defis">${items.join("")}</ul>` : `<h3>Défie tes amis</h3><span class="hint">Termine une voie, puis « ⚔️ Défier un ami » : il joue la même voie avec les mêmes propositions, contre ton fantôme. +50 XP au vainqueur.</span>`}</div>`;
+}
+function fillDefis(){
+  document.querySelectorAll("[data-dfm]").forEach(el => { const [i,j] = el.dataset.dfm.split(":").map(Number); const x = ((DF.mine[i]||{}).defi_results||[]).slice().sort((a,b)=>b.score-a.score)[j]; el.textContent = x ? (x.pseudo||"Anonyme") : ""; });
+  document.querySelectorAll("[data-dfp]").forEach(el => { const r = DF.played[+el.dataset.dfp]; el.textContent = r && r.defis ? (r.defis.pseudo||"Anonyme") : ""; });
+}
+async function createDefi(){
+  if (!defiOn() || !R || !R.end) return;
+  const base = R.daily ? Math.round(R.end.gained/2) : R.end.gained;
+  const id = newDefiId();
+  sheetId = "defi";
+  sheetEl.innerHTML = `<div class="sheetbg" id="sbg"><div class="sheet" role="dialog" aria-modal="true" aria-label="Défi" style="--w:var(--heme)"><div class="shead"><div><span class="eyebrow">Défi</span><h2>Création du défi…</h2></div><button class="x" id="sx" aria-label="Fermer">✕</button></div></div></div>`;
+  try {
+    const r = await SB.from("defis").insert({id, voie:R.L.id, mode:R.mode, seed:R.seed, uid:LB.uid, sid:LB.sid||"", pseudo:(G.pseudo||"").slice(0,20), score:base, time_s:Math.round(R.end.time), splits:R.splits.map(x=>Math.round(x*10)/10)});
+    if (r.error) throw r.error;
+    DF.link = defiURL(id);
+    defiShareSheet(`${voieName(R.L.id)} · ${MODES[R.mode].n}`, base, R.end.time);
+    sbDefis();
+  } catch(e){
+    sheetEl.querySelector(".sheet").innerHTML = `<div class="shead"><div><span class="eyebrow">Défi</span><h2>Impossible de créer le défi</h2></div><button class="x" id="sx" aria-label="Fermer">✕</button></div><p>Le classement en ligne ne répond pas. Réessaie dans un moment.</p>`;
+  }
+}
+function defiShareSheet(title, score, time){
+  sheetId = "defi";
+  sheetEl.innerHTML = `<div class="sheetbg" id="sbg"><div class="sheet" role="dialog" aria-modal="true" aria-label="Défi" style="--w:var(--heme)">
+    <div class="shead"><div><span class="eyebrow">Défi prêt · valable 7 jours</span><h2>⚔️ ${esc(title)}</h2></div><button class="x" id="sx" aria-label="Fermer">✕</button></div>
+    ${score!=null?`<p>Ton score à battre : <b>${score} pts</b>${time!=null?" en "+fmtT(time):""}. Ton ami jouera la même voie avec les mêmes propositions, contre ton fantôme.</p>`:""}
+    <div class="coderow"><code class="dlink" id="dlink">${esc(DF.link)}</code></div>
+    <div class="acts"><button class="cta" data-dshare="1">Partager</button><button class="cta alt" data-dcopy="1">Copier le lien</button></div>
+    <p class="note" id="dmsg">Tu verras son score dans « Défis entre amis » sur ton accueil.</p></div></div>`;
+}
+async function shareDefi(){
+  const text = "⚔️ Je te défie sur Metabolix ! Bats mon score :";
+  try { if (navigator.share){ await navigator.share({title:"Défi Metabolix", text, url:DF.link}); return; } } catch(e){ if (e && e.name==="AbortError") return; }
+  copyDefi();
+}
+async function copyDefi(){
+  let ok = false; try { await navigator.clipboard.writeText(DF.link); ok = true; } catch(e){}
+  if (!ok){ try { const r = document.createRange(); r.selectNodeContents(document.getElementById("dlink")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); } catch(e){} }
+  const m = document.getElementById("dmsg"); if (m) m.textContent = ok ? "Lien copié : colle-le dans ta conversation." : "Lien sélectionné : fais Ctrl+C (ou appui long → Copier).";
+}
+async function checkDefiHash(){
+  const m = location.hash.match(/defi=([2-9A-HJKMNP-Z]{8})/i); if (!m || !SB) return;
+  const id = m[1].toUpperCase();
+  try { history.replaceState(null, "", location.pathname + location.search); } catch(e){}
+  sheetId = "defi";
+  const sheet = inner => { sheetEl.innerHTML = `<div class="sheetbg" id="sbg"><div class="sheet" role="dialog" aria-modal="true" aria-label="Défi" style="--w:var(--heme)">${inner}</div></div>`; };
+  const head = (eb, h) => `<div class="shead"><div><span class="eyebrow">${eb}</span><h2>${h}</h2></div><button class="x" id="sx" aria-label="Fermer">✕</button></div>`;
+  sheet(head("Défi", "Chargement du défi…"));
+  try {
+    const [d, mine] = await Promise.all([SB.from("defis").select("id,voie,mode,seed,uid,sid,pseudo,score,time_s,splits,expires_at").eq("id", id).maybeSingle(),
+      SB.from("defi_results").select("score,won").eq("defi_id", id).eq("uid", LB.uid).maybeSingle()]);
+    const df = d.data;
+    if (d.error || !df || new Date(df.expires_at) < new Date()){ sheet(head("Défi", "Ce défi n'existe plus") + `<p>Les défis durent 7 jours. Demande un nouveau lien à ton ami !</p>`); return; }
+    const L = LEVELS.find(l=>l.id===df.voie); if (!L){ sheet(head("Défi", "Défi inconnu") + `<p>Cette voie n'existe pas dans ta version du jeu. Recharge la page.</p>`); return; }
+    const own = df.uid===LB.uid || (df.sid && df.sid===LB.sid);
+    const who = `<span id="dfwho"></span>`;
+    if (own){ DF.link = defiURL(id); defiShareSheet(`${L.t} · ${MODES[df.mode].n}`, df.score, df.time_s); sheetEl.querySelector(".eyebrow").textContent = "C'est ton propre défi"; return; }
+    if (mine.data){ sheet(head("Défi déjà relevé", `${mine.data.won?"🏆 Gagné":"💥 Perdu"} contre ${who}`) + `<p>Ton score : <b>${mine.data.score}</b> contre <b>${df.score}</b>. Un défi ne se joue qu'une fois, mais tu peux lancer une revanche depuis la fin de n'importe quelle voie.</p>`); }
+    else {
+      DF.cur = df;
+      sheet(head("Tu as reçu un défi", `⚔️ ${who} te défie !`) + `
+        <p><b>${esc(L.t)}</b> en <b>${MODES[df.mode].n}</b> : <b>${df.score} pts</b> en ${fmtT(df.time_s)}.</p>
+        <p class="hint">Même voie, mêmes propositions dans le même ordre, et son fantôme court contre toi. Le vainqueur gagne +50 XP. Un seul essai !</p>
+        <div class="inputs"><button class="inp" data-in="pieces" aria-pressed="${G.input!=="clavier"}">Propositions</button><button class="inp" data-in="clavier" aria-pressed="${G.input==="clavier"}">Clavier · ×1,5</button></div>
+        <button class="cta" data-dgo="1">Relever le défi</button>`);
+    }
+    const w = document.getElementById("dfwho"); if (w) w.textContent = df.pseudo || "Un joueur anonyme";
+  } catch(e){ sheet(head("Défi", "Défi indisponible") + `<p>Le classement en ligne ne répond pas. Réessaie dans un moment.</p>`); }
+}
+function acceptDefi(){ const df = DF.cur; if (!df) return; DF.cur = null; startRun(df.voie, df.mode, G.input==="clavier", df); }
+function settleDefi(){
+  const df = R.defi, score = R.end.gained, time = Math.round(R.end.time);
+  const won = score > df.score || (score === df.score && time < df.time_s);
+  G.defis = G.defis || {};
+  let bonus = 0;
+  if (won && !G.defis[df.id]){ bonus = 50; addXP(50); }
+  G.defis[df.id] = {won, score};
+  R.end.defi = {won, score, other:df.score, bonus, pseudo:df.pseudo||"ton ami"};
+  if (SB) SB.from("defi_results").insert({defi_id:df.id, uid:LB.uid, sid:LB.sid||"", pseudo:(G.pseudo||"").slice(0,20), score, time_s:time})
+    .then(r => { if (r && r.error) console.warn(r.error.message); sbDefis(); }).catch(()=>{});
+}
+function defiResultHTML(){
+  const D = R && R.end && R.end.defi; if (!D) return "";
+  return `<div class="dres ${D.won?"win":"lose"}"><b>${D.won?"🏆 Défi gagné !":"💥 Défi perdu"}</b>
+    <span>Toi ${D.score} pts · <span id="dresname"></span> ${D.other} pts${D.score===D.other?" (égalité : le plus rapide gagne)":""}${D.bonus?` · <b>+${D.bonus} XP</b>`:""}</span></div>`;
+}
+
 /* ================== OUTILS ================== */
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const shuffle = a => { for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+const shuffle = a => { for (let i=a.length-1;i>0;i--){ const j=Math.floor(RNG()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
 const norm = s => String(s).trim();
 const GREEK = {"α":" alpha ","β":" beta ","γ":" gamma ","δ":" delta ","Δ":" delta "};
 const SUPS = {"⁺":"+","⁻":"-","¹":"1","²":"2","³":"3","ᵉ":"e","ʳ":"r"};
@@ -2125,13 +2397,15 @@ let R = null, timerId = null, S = {screen:"home"};
 const app = document.getElementById("app");
 const sheetEl = document.getElementById("sheet");
 
-function startRun(id, mode, typing){
-  const L = LEVELS.find(l=>l.id===id); if (!L || (L.boss && !bossUnlocked())) return;
+function startRun(id, mode, typing, df){
+  const L = LEVELS.find(l=>l.id===id); if (!L || (L.boss && !bossUnlocked() && !df)) return;
   closeSheet();
   const b = buildSlots(L, mode);
   const pos = {}; b.order.forEach((sid,k)=>pos[sid]=k);
-  const daily = dailyId()===L.id;
-  R = {L, mode, typing, slots:b.slots, parts:b.parts, order:b.order, pos, k:0,
+  const daily = !df && dailyId()===L.id;
+  const seed = df ? (+df.seed>>>0) : newSeed(); RNG = mulberry32(seed);
+  RK0 = rankSnap();
+  R = {L, mode, typing, seed, defi:df||null, wasDue:isDue(id), slots:b.slots, parts:b.parts, order:b.order, pos, k:0,
        hearts:HEARTS(L), maxH:HEARTS(L), combo:0, bestCombo:0, pts:0, good:0, wrongs:[],
        x: MODES[mode].x * (L.boss?2:1) * (daily?2:1), daily, answered:0, typedN:0,
        t0:Date.now(), splits:[], status:"play", lastId:null, gain:null, hit:false, opts:[], sugs:[], sugIdx:-1, end:null};
@@ -2142,7 +2416,7 @@ function startRun(id, mode, typing){
   timerId = setInterval(tick, 500);
 }
 const cur = () => R.slots[R.order[R.k]];
-const ghostOf = () => { const r = G.voies[R.L.id]; return r && r.best && r.best[R.mode] && r.best[R.mode].splits; };
+const ghostOf = () => { if (R.defi) return R.defi.splits; const r = G.voies[R.L.id]; return r && r.best && r.best[R.mode] && r.best[R.mode].splits; };
 function comboMult(){ return Math.min(5, 1 + Math.floor(R.combo/3)); }
 
 function tick(){
@@ -2210,9 +2484,12 @@ function finish(won){
   const today = dayStr();
   if (G.lastDay !== today){ const y = new Date(); y.setDate(y.getDate()-1); G.streak = (G.lastDay===dayStr(y)) ? (G.streak||0)+1 : 1; G.lastDay = today; }
   addXP(gained);
-  save();
   R.status = "end";
   R.end = {won, perfect, acc, bonus, gained, time, before, after:{m:mastery(L.id), stars:newStars, rank:rankOf(G.xp)}, st, record, prevBest, next:nextReview(L.id)};
+  if (R.defi) settleDefi();
+  R.end.quests = questEvent("run", {won, perfect, mode:R.mode, bestCombo:R.bestCombo, daily:R.daily, typedAll: R.answered>0 && R.typedN===R.answered});
+  R.end.after.rank = rankOf(G.xp);
+  save();
   renderRun();
   const res = document.getElementById("result"); if (res && res.scrollIntoView) res.scrollIntoView({block:"start", behavior: reduced()?"auto":"smooth"});
 }
@@ -2409,16 +2686,20 @@ function resultHTML(){
     ${E.won && R.mode==="m" && !E.perfect ? `<p class="hint">La 3ᵉ étoile se gagne en Major sans perdre un seul cœur.</p>` : ""}
     ${!E.won ? `<p class="hint">Pas d'étoile cette fois. Toutes les réponses manquantes sont affichées dans la voie, en gris.</p>` : ""}
     ${rk}
+    ${defiResultHTML()}
     <div class="kv">
       <div><span class="eyebrow">XP gagnée</span><b class="mono">+${E.gained}</b><span class="hint">${R.pts} en jeu${E.bonus?" + "+E.bonus+" de bonus":""}</span></div>
       <div><span class="eyebrow">Maîtrise</span><b>${E.before.m} → ${E.after.m} %</b><span class="hint">${E.next!=null?"À revoir dans "+plural(Math.max(1,E.next),"jour"):""}</span></div>
       <div><span class="eyebrow">Record ${MODES[R.mode].n}</span><b class="mono">${E.record?"Nouveau !":(E.prevBest?E.prevBest.pts:"—")}</b><span class="hint">${E.record&&E.prevBest?"Ancien : "+E.prevBest.pts:""}</span></div>
     </div>
+    ${questsDoneHTML(E.quests)}
+    <div id="rkdelta">${rkDeltaHTML()}</div>
     ${whys.length?`<div><div class="eyebrow">À retenir</div><ul>${whys.join("")}</ul></div>`:""}
     <p class="tip">${esc(R.L.tip)}</p>
     ${reportOn()?`<p class="hint"><button class="linkbtn" data-report="${esc(R.L.t)}">Une réponse te semble fausse ? Signale-la</button></p>`:""}
     <div class="acts">
-      <button class="cta" data-act="again">Rejouer</button>
+      ${defiOn() && E.won ? `<button class="cta defi" data-act="defi">${R.defi?"⚔️ Revanche":"⚔️ Défier un ami"}</button>` : ""}
+      <button class="cta${defiOn() && E.won ? " alt" : ""}" data-act="again">Rejouer</button>
       ${nextMode?`<button class="cta alt" data-act="up">Passer en ${MODES[nextMode].n}</button>`:""}
       ${nx?`<button class="cta alt" data-act="next">Voie suivante</button>`:""}
       <button class="cta alt" data-act="home">Carte</button>
@@ -2436,6 +2717,8 @@ function renderRun(first){
       <div class="board">${boardHTML()}</div>
       ${resultHTML()}
     </main>${deskHTML()}</div>`;
+  const dn = document.getElementById("dresname"); if (dn && R.end && R.end.defi) dn.textContent = R.end.defi.pseudo;
+  fillRkDelta();
   if (R.typing && R.status==="play"){ const i = document.getElementById("ans"); let fine = false; try { fine = matchMedia("(pointer: fine)").matches; } catch(e){} if (i && (!first || fine)) i.focus({preventScroll:true}); }
   if (R.status!=="end"){
     const c = document.getElementById("cur");
@@ -2477,6 +2760,7 @@ function homeHTML(){
           <div class="stat star"><b>${starsTotal()}</b><span class="hint">étoiles sur ${LEVELS.length*3}</span></div>
           <div class="stat"><b>${mastered()}</b><span class="hint">voies maîtrisées sur ${LEVELS.length}</span></div>
         </div>
+        <div id="myplace">${myPlaceHTML()}</div>
       </div>
     </header>
     ${championHTML()}
@@ -2486,6 +2770,8 @@ function homeHTML(){
           <button class="tcard daily" data-v="${daily.id}" style="--w:${WORLDS[daily.w].c}"><span class="tag2">Voie du jour · XP ×2</span><h3>${esc(daily.t)}</h3><span class="hint">${esc(daily.s)}</span><span class="stars">${starStr((G.voies[daily.id]||{}).stars||0)}</span></button>
           <div class="tcard"><span class="eyebrow">À revoir</span><h3>${dues.length ? plural(dues.length,"voie")+" s'oxyde"+(dues.length>1?"nt":"") : "Rien à revoir"}</h3>
             ${dues.length ? `<div class="duelist">${dues.slice(0,6).map(l=>`<button class="due" data-v="${l.id}">${esc(SHORT[l.id])} · ${mastery(l.id)} %</button>`).join("")}</div>` : `<span class="hint">${Object.keys(G.voies).length ? "Tout est frais. Attaque une nouvelle voie ou vise une étoile de plus." : "Joue une première voie : elle reviendra ici quand il faudra la réviser."}</span>`}</div>
+          ${questsHTML()}
+          ${defisHTML()}
           ${learnHomeHTML()}
           ${guessHomeHTML()}
         </div></section>
@@ -2498,7 +2784,7 @@ function homeHTML(){
     <aside class="aside" id="lbbox"></aside></div>
     <footer class="foot"><p><button class="linkbtn" data-patch="1">v${VERSION} · notes de patch</button> · Fait par <span class="sig">floko</span> · jeu non officiel, d'après les ronéos de l'UE 3.3. Il peut contenir des erreurs : en cas de doute, c'est le cours qui fait foi.${reportOn()?` <button class="linkbtn" data-report="Général">Signaler une erreur</button>`:""}</p></footer></div>`;
 }
-function renderHome(){ clearInterval(timerId); S.screen="home"; R=null; LR=null; GQ=null; app.innerHTML = homeHTML(); fillChampion(); renderLB(); maybePatch(); }
+function renderHome(){ clearInterval(timerId); S.screen="home"; R=null; LR=null; GQ=null; app.innerHTML = homeHTML(); fillChampion(); fillDefis(); renderLB(); maybePatch(); }
 
 /* ---------- fiche voie ---------- */
 let sheetId = null;
@@ -2537,6 +2823,9 @@ app.addEventListener("click", e => {
     const lt = e.target.closest("[data-lbt]"); if (lt){ LB.tab = lt.dataset.lbt; renderLB(); return; }
     const cq = e.target.closest("[data-cq]"); if (cq){ if (cq.dataset.cq==="edit"){ LB.qedit = true; LB.qmsg = ""; const el = document.getElementById("champ"); if (el){ el.outerHTML = championHTML(); fillChampion(); } const i = document.getElementById("cq"); if (i) i.focus(); } else setQuote(); return; }
     const pt = e.target.closest("[data-patch]"); if (pt){ openPatch(); return; }
+    if (e.target.closest("[data-goto]")){ const bx = document.getElementById("lbbox"); if (bx && bx.scrollIntoView) bx.scrollIntoView({block:"start", behavior: reduced()?"auto":"smooth"}); return; }
+    if (e.target.closest("[data-lbmore]")){ LB.more = !LB.more; renderLB(); return; }
+    const ds = e.target.closest("[data-dshareid]"); if (ds){ DF.link = defiURL(ds.dataset.dshareid); defiShareSheet("Ton défi", null, null); return; }
     const gb = e.target.closest("[data-guess]"); if (gb){ startGuess(); return; }
     const gw = e.target.closest("[data-gw]"); if (gw){ guessW = gw.dataset.gw; renderHome(); return; }
     const lb = e.target.closest("[data-learn]"); if (lb){ startLesson(lb.dataset.learn); return; }
@@ -2548,6 +2837,7 @@ app.addEventListener("click", e => {
   if (b.id==="cont"){ proceed(); return; }
   if (b.dataset.act){
     const a = b.dataset.act, idx = LEVELS.indexOf(R.L);
+    if (a==="defi"){ createDefi(); return; }
     if (a==="again") startRun(R.L.id, R.mode, R.typing);
     else if (a==="up"){ const nm = R.mode==="a"?"i":"m"; G.mode = nm; save(); startRun(R.L.id, nm, R.typing); }
     else if (a==="next") startRun(LEVELS[idx+1].id, R.mode, R.typing);
@@ -2566,6 +2856,10 @@ sheetEl.addEventListener("click", e => {
   if (b.id==="sx" || b.id==="sx2"){ closeSheet(); return; }
   if (b.dataset.report){ openReport(b.dataset.report); return; }
   if (b.id==="rsend"){ sendReport(); return; }
+  if (b.dataset.dshare){ shareDefi(); return; }
+  if (b.dataset.dcopy){ copyDefi(); return; }
+  if (b.dataset.dgo){ acceptDefi(); return; }
+  if (sheetId==="defi" && b.dataset.in){ G.input = b.dataset.in; save(); sheetEl.querySelectorAll("[data-in]").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.in===G.input))); return; }
   if (b.dataset.d){ G.mode = b.dataset.d; save(); openSheet(sheetId); return; }
   if (b.dataset.in){ G.input = b.dataset.in; save(); openSheet(sheetId); return; }
   if (b.dataset.learn){ startLesson(b.dataset.learn); return; }
@@ -2573,7 +2867,7 @@ sheetEl.addEventListener("click", e => {
 });
 document.addEventListener("mousemove", () => { const f = document.querySelectorAll(".opts.fresh"); for (const x of f) x.classList.remove("fresh"); }, {passive:true});
 document.addEventListener("keydown", e => {
-  if (sheetId){ if (e.key==="Escape") closeSheet(); if (sheetId==="mol" || sheetId==="report" || sheetId==="patch" || e.key==="Escape") return; }
+  if (sheetId){ if (e.key==="Escape") closeSheet(); if (sheetId==="mol" || sheetId==="report" || sheetId==="patch" || sheetId==="defi" || e.key==="Escape") return; }
   if (S.screen==="guess" && GQ){
     if (GQ.status==="fb" && (e.key==="Enter"||e.key===" ") && e.target.id!=="gnext"){ e.preventDefault(); guessNext(); return; }
     if (GQ.status!=="play") return;
@@ -2619,7 +2913,7 @@ function renderLB(){
   if (LB.state==="loading") body = `<p class="note">Chargement du classement…</p>`;
   else if (LB.state==="off") body = `<p class="note">Classement indisponible pour le moment. Ta progression reste enregistrée dans ce navigateur.</p>`;
   else if (!rows || !rows.length) body = `<p class="note">${wk?"Personne n'a encore marqué de points cette semaine. Le premier à jouer prend la tête !":"Personne au classement pour l'instant. Choisis un pseudo et termine une voie."}</p>`;
-  else body = lbListHTML(rows);
+  else body = SB ? lbListHTML2(rows, wk) : lbListHTML(rows);
   const tabs = SB && LB.state==="on" ? `<div class="lbtabs" role="tablist"><button data-lbt="week" aria-pressed="${wk}">Cette semaine</button><button data-lbt="all" aria-pressed="${!wk}">Général</button></div>` : "";
   box.innerHTML = `<h2>Classement</h2>${tabs}<span class="eyebrow">${wk?"XP depuis lundi · toi : "+weekXP()+" XP":"XP totale"}</span>
     ${pseudoHTML()}
@@ -2628,21 +2922,25 @@ function renderLB(){
     ${LB.readOnly && LB.state==="on" ? `<p class="note">Tu peux voir le classement mais pas y publier ton score avec ton accès actuel.</p>` : ""}
     <p class="note">Rangs : ${RANKS.map(r=>esc(r[0])).join(" → ")}.</p>${saveBoxHTML()}`;
   if (rows) box.querySelectorAll("[data-who]").forEach(el => { el.textContent = rows[+el.dataset.who].pseudo || "Anonyme"; });
+  box.querySelectorAll("[data-whome]").forEach(el => { el.textContent = (G.pseudoOk && G.pseudo) ? G.pseudo + " (toi)" : "Toi"; });
+  const mp = document.getElementById("myplace"); if (mp) mp.innerHTML = myPlaceHTML();
   if (aid){ const el = document.getElementById(aid); if (el){ if (act.value!=null && el.value!==undefined) el.value = act.value; el.focus({preventScroll:true}); if (sel) try { el.setSelectionRange(sel[0], sel[1]); } catch(e){} } }
 }
 let saving = Promise.resolve();
 let SB = null;
 async function sbTop(){
   if (!SB) return;
-  await sbWeekly();
-  const r = await SB.from("scores").select("id,pseudo,xp,sid").order("xp",{ascending:false}).limit(60);
+  LB.lastTop = Date.now();
+  await Promise.all([sbWeekly(), sbRanks()]);
+  const r = await SB.from("scores").select("id,pseudo,xp,sid").order("xp",{ascending:false}).limit(100);
   if (r.error){ LB.state = "off"; }
   else {
     const seen = new Set(), rows = [];
-    for (const x of r.data){ const k = x.sid || x.id; if (seen.has(k)) continue; seen.add(k); rows.push({id:x.id, sid:x.sid||"", pseudo:String(x.pseudo||"").slice(0,20), xp:Math.round(+x.xp||0)}); if (rows.length>=30) break; }
+    for (const x of r.data){ const k = x.sid || x.id; if (seen.has(k)) continue; seen.add(k); rows.push({id:x.id, sid:x.sid||"", pseudo:String(x.pseudo||"").slice(0,20), xp:Math.round(+x.xp||0)}); if (rows.length>=50) break; }
     LB.rows = rows; LB.state = "on";
   }
   if (S.screen==="home") renderLB();
+  fillRkDelta();
 }
 function saveRemote(){
   if (SB && LB.uid){
@@ -2669,8 +2967,12 @@ function saveRemote(){
       await cloudInit();
       if (G.pseudo && !G.pseudoOk) await claimPseudo(G.pseudo, true);
       await sbChampion(); setInterval(sbChampion, 3600000);
-      await sbTop(); setInterval(sbTop, 60000);
+      await sbTop(); sbDefis();
+      setInterval(() => { if (document.visibilityState!=="hidden") { sbTop(); sbDefis(); } }, 150000);
+      document.addEventListener("visibilitychange", () => { if (document.visibilityState==="visible" && Date.now()-(LB.lastTop||0) > 60000){ sbTop(); sbDefis(); } });
+      window.addEventListener("hashchange", checkDefiHash);
       if (G.xp>0) saveRemote(); else renderLB();
+      checkDefiHash();
       return;
     }
     if (!window.claude || !window.claude.use){ LB.state="off"; renderLB(); return; }
